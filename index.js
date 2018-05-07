@@ -8,7 +8,7 @@ var options = {
     width: 375,
     height: "all"
   },
-  quality: 10,
+  quality: 1,
   // timeout: 3000,
   userAgent:
     "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us)" +
@@ -17,7 +17,7 @@ var options = {
 
 // 原始数组数据
 let array = [],
-  arrLen = 1000;
+  arrLen = 100;
 for (var i = 1; i < arrLen; i++) {
   array[array.length] = i;
 }
@@ -51,8 +51,8 @@ const haha = (i, s) => {
         START++;
         cc(START);
       }
-      if (middles[s] == arrLen) {
-        console.timeEnd(`${arrLen} Time-consuming`);
+      if (i == arrLen) {
+        console.timeEnd(`Time-consuming`);
       }
     }
   );
@@ -65,11 +65,10 @@ const cc = s => {
     index++
   ) {
     if (index == (middles[s] == SIZE ? 0 : middles[s - 1])) {
-      console.time(`${arrLen} Time-consuming`);
       console.time(middles[s] == SIZE ? 0 : middles[s - 1]);
     }
     haha(index, s);
   }
 };
-
+console.time(`Time-consuming`);
 cc(START);
