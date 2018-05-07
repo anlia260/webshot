@@ -1,0 +1,11 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "phantomjs": "^2.1.7",
+    "screenshot-phantom": "^1.0.3",
+    "webshot": "^0.18.0"
+  }
+}
