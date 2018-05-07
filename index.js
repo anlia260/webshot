@@ -23,7 +23,7 @@ for (var i = 1; i < arrLen; i++) {
 }
 
 // 分段长度
-const SIZE = 4;
+const SIZE = 20;
 
 // 段数
 const LEN = arrLen / SIZE;
